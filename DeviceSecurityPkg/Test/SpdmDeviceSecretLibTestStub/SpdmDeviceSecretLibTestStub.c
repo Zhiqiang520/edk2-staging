@@ -268,12 +268,25 @@ RETURN_STATUS SpdmMeasurementCollectionFunc (
     VOID *measurements,
     UINTN *measurements_size)
 {
+    DEBUG((DEBUG_INFO, "!!!!!!!spdm_version 0x%0x !!!!!!!!!\n", spdm_version));
+    DEBUG((DEBUG_INFO, "!!!!!!!request_attribute 0x%0x !!!!!!!!!\n", request_attribute));
     SPDM_MEASUREMENT_BLOCK_DMTF *measurement_block;
     UINTN hash_size;
     UINT8 index;
     UINTN total_size_needed;
     BOOLEAN use_bit_stream;
     UINTN measurement_block_size;
+    EFI_STATUS Status;
+    UINT8 TestConfig;
+    UINTN TestConfigSize;
+
+    Status = gRT->GetVariable (
+                L"SpdmTestConfig",
+                &gEfiDeviceSecurityPkgTestConfig,
+                NULL,
+                &TestConfigSize,
+                &TestConfig
+                );
 
     LIBSPDM_ASSERT(measurement_specification ==
                    SPDM_MEASUREMENT_BLOCK_HEADER_SPECIFICATION_DMTF);
@@ -359,7 +372,8 @@ RETURN_STATUS SpdmMeasurementCollectionFunc (
             measurement_block = (void *)((uint8_t *)measurement_block + measurement_block_size);
         }
 
-        return LIBSPDM_STATUS_SUCCESS;
+        DEBUG((DEBUG_INFO, "!!!!!!!My flag-3 !!!!!!!!!\n"));
+        // return LIBSPDM_STATUS_SUCCESS;
     } else {
         /* One Index */
         if (measurements_index <= LIBSPDM_MEASUREMENT_BLOCK_HASH_NUMBER) {
@@ -451,7 +465,13 @@ RETURN_STATUS SpdmMeasurementCollectionFunc (
         /* return content change*/
         if ((request_attribute & SPDM_GET_MEASUREMENTS_REQUEST_ATTRIBUTES_GENERATE_SIGNATURE) !=
             0) {
-            *content_changed = SPDM_MEASUREMENTS_RESPONSE_CONTENT_NO_CHANGE_DETECTED;
+            if (TestConfig == TEST_CONFIG_MEASUREMENT_CONTENT_MODIFIED) {
+                *content_changed = SPDM_MEASUREMENTS_RESPONSE_CONTENT_CHANGE_DETECTED;
+                DEBUG((DEBUG_INFO, "!!!!!!!My flag-1 !!!!!!!!!\n"));
+            } else {
+                *content_changed = SPDM_MEASUREMENTS_RESPONSE_CONTENT_NO_CHANGE_DETECTED;
+                DEBUG((DEBUG_INFO, "!!!!!!!My flag-2 !!!!!!!!!\n"));
+            }
         } else {
             *content_changed = SPDM_MEASUREMENTS_RESPONSE_CONTENT_CHANGE_NO_DETECTION;
         }

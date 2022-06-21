@@ -481,6 +481,7 @@ DoDeviceMeasurement (
   UINT8                         NumberOfBlock;
   UINT8                         ReceivedNumberOfBlock;
   UINT8                         AuthState;
+  UINT8                         ContentChanged;
 
   SpdmContext = SpdmDeviceContext->SpdmContext;
 
@@ -508,7 +509,7 @@ DoDeviceMeasurement (
              RequestAttribute,
              SPDM_GET_MEASUREMENTS_REQUEST_MEASUREMENT_OPERATION_ALL_MEASUREMENTS,
              0,
-             NULL,
+             &ContentChanged,
              &NumberOfBlocks,
              &MeasurementRecordLength,
              MeasurementRecord,
