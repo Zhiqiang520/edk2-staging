@@ -73,4 +73,18 @@
       IntrinsicLib|CryptoPkg/Library/IntrinsicLib/IntrinsicLib.inf
       RngLib|MdePkg/Library/BaseRngLibTimerLib/BaseRngLibTimerLib.inf
   }
+  UefiHostFuzzTestCasePkg/TestCase/CryptoPkg/AEAD/TestAeadEncrypt.inf {
+    <LibraryClasses>
+      OpensslLib|CryptoPkg/Library/OpensslLib/OpensslLib.inf
+      BaseCryptLib|CryptoPkg/Library/BaseCryptLib/BaseCryptLib.inf
+      IntrinsicLib|CryptoPkg/Library/IntrinsicLib/IntrinsicLib.inf
+      RngLib|MdePkg/Library/BaseRngLibTimerLib/BaseRngLibTimerLib.inf
+  }
+  UefiHostFuzzTestCasePkg/TestCase/CryptoPkg/AEAD/TestAeadDecrypt.inf {
+    <LibraryClasses>
+      OpensslLib|CryptoPkg/Library/OpensslLib/OpensslLib.inf
+      BaseCryptLib|CryptoPkg/Library/BaseCryptLib/BaseCryptLib.inf
+      IntrinsicLib|CryptoPkg/Library/IntrinsicLib/IntrinsicLib.inf
+      RngLib|MdePkg/Library/BaseRngLibTimerLib/BaseRngLibTimerLib.inf
+  }
 !include UefiHostFuzzTestPkg/UefiHostFuzzTestBuildOption.dsc
