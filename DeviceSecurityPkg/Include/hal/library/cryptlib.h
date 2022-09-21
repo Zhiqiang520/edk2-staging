@@ -15,7 +15,7 @@
 #define __SPDM_CRYPT_LIB_H__
 
 #include <Library/BaseCryptLib.h>
-#include <hal/library/LibSpdmCryptlibStub.h>
+#include <hal/library/LibspdmCryptlibStub.h>
 
 #define LIBSPDM_CRYPTO_NID_NULL  0x0000
 
