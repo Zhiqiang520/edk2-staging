@@ -372,6 +372,10 @@ MainEntryPoint (
                   &TestConfig
                   );
 
+  if (TestConfig == TEST_CONFIG_NO_CERT_CAP) {
+    Print (L"---TestConfig is TEST_CONFIG_NO_CERT_CAP, so not provison SECURITY_DATABASE and CertChain!---\n");
+    return EFI_SUCCESS;
+  }
   switch (TestConfig) {
     case TEST_CONFIG_NO_TRUST_ANCHOR:
       CertChain     = TestCertChain2;

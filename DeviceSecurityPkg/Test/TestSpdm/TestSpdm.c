@@ -19,6 +19,8 @@
 #include <Protocol/Spdm.h>
 #include <Protocol/SpdmTest.h>
 #include <Protocol/DeviceSecurity.h>
+#include <Library/UefiRuntimeServicesTableLib.h>
+#include <Test/TestConfig.h>
 
 #define USE_PSK  0
 
@@ -305,9 +307,26 @@ MainEntryPoint (
   IN EFI_SYSTEM_TABLE  *SystemTable
   )
 {
+  EFI_STATUS           Status;
+  UINT8                TestConfig;
+  UINTN                TestConfigSize;
+  TestConfigSize = sizeof(UINT8);
+  Status = gRT->GetVariable (
+                  L"SpdmTestConfig",
+                  &gEfiDeviceSecurityPkgTestConfig,
+                  NULL,
+                  &TestConfigSize,
+                  &TestConfig
+                  );
+  if (EFI_ERROR (Status)) {
+    return Status;
+  }
+
   // CpuBreakpoint();
   TestPci ();
 
-  TestSpdm ();
+  if (TestConfig != TEST_CONFIG_NO_CERT_CAP) {
+    TestSpdm ();
+  }
   return EFI_SUCCESS;
 }
