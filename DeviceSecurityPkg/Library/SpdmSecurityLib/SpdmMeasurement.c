@@ -569,7 +569,7 @@ DoDeviceMeasurement (
                  RequesterNonce,
                  ResponderNonce
                  );
-  if (LIBSPDM_STATUS_IS_SUCCESS (SpdmReturn)) {
+  if (!LIBSPDM_STATUS_IS_SUCCESS (SpdmReturn)) {
     DEBUG ((DEBUG_INFO, "NumberOfBlocks %d\n", NumberOfBlocks));
 
     MeasurementBlock = (VOID *)MeasurementRecord;
