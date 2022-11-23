@@ -33,6 +33,7 @@
   PrintLib
   DebugLib
   UefiLib
+  TestSignListLib
 
 [Protocols]
   gEdkiiDeviceIdentifierTypePciGuid  ## CONSUME

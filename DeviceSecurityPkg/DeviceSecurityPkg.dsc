@@ -109,6 +109,7 @@ DEFINE CRYPT_LIB = OPENSSL
   SpdmTransportMctpLib|DeviceSecurityPkg/Library/SpdmLib/SpdmTransportMctpLib.inf
   SpdmTransportPciDoeLib|DeviceSecurityPkg/Library/SpdmLib/SpdmTransportPciDoeLib.inf
   SpdmMeasurementLib|DeviceSecurityPkg/Library/SpdmSecurityLib/SpdmSecurityLib.inf
+  TestSignListLib|DeviceSecurityPkg/Library/TestSignListLib/TestSignListLib.inf
 
   CryptlibWrapper|DeviceSecurityPkg/Library/OsStub/CryptlibWrapper/CryptlibWrapper.inf
   PlatformLibWrapper|DeviceSecurityPkg/Library/OsStub/PlatformLibWrapper/PlatformLibWrapper.inf
