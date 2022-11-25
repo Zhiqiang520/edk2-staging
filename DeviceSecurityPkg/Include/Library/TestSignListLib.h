@@ -4,6 +4,7 @@
 #include <Library/MemoryAllocationLib.h>
 #include <Library/BaseMemoryLib.h>
 #include <Library/DebugLib.h>
+#include <Library/SpdmReturnStatus.h>
 
 VOID
 Traverse_SignatureList (

@@ -8,6 +8,7 @@ Traverse_SignatureList (
 {
   VOID                 *SpdmContext;
   UINTN                SpdmContextSize;
+  SPDM_RETURN          SpdmReturn;
   EFI_SIGNATURE_LIST   *DbList;
   EFI_SIGNATURE_DATA   *Cert;
   UINTN                CertCount;
@@ -52,8 +53,10 @@ Traverse_SignatureList (
 
         ZeroMem (&Parameter, sizeof (Parameter));
         Parameter.location = SpdmDataLocationLocal;
-        SpdmSetData (SpdmContext, SpdmDataPeerPublicRootCert, &Parameter, Data, DataSize);
-
+        SpdmReturn = SpdmSetData (SpdmContext, SpdmDataPeerPublicRootCert, &Parameter, Data, DataSize);
+        if (LIBSPDM_STATUS_IS_ERROR(SpdmReturn)) {
+          goto Error;
+        }
         Cert = (EFI_SIGNATURE_DATA *)((UINT8 *)Cert + DbList->SignatureSize);
       }
 
@@ -64,4 +67,6 @@ Traverse_SignatureList (
       printf("DbList->SignatureSize at end of while- 0x%x\n", DbList->SignatureSize);
     }
   }
+Error:
+  FreePool (SpdmContext);
 }
