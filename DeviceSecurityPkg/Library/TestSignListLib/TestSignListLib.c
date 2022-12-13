@@ -31,7 +31,12 @@ Traverse_SignatureList (
       printf("DbSize at begin of while- 0x%x\n", DbSize);
       printf("DbList->SignatureListSize at begin of while- 0x%x\n", DbList->SignatureListSize);
       printf("DbList->SignatureSize at begin of while- 0x%x\n", DbList->SignatureSize);
-      if (!CompareGuid (&DbList->SignatureType, &gEfiCertX509Guid)) {
+      if (DbList->SignatureListSize == 0) {
+        break;
+      }
+      if ((!CompareGuid (&DbList->SignatureType, &gEfiCertX509Guid))
+           || (DbList->SignatureHeaderSize != 0)
+           || (DbList->SignatureSize < sizeof (EFI_SIGNATURE_DATA))) {
         printf("DbSize at begin of CompareGuid block- 0x%x\n", DbSize);
         printf("DbList->SignatureListSize at begin of CompareGuid block- 0x%x\n", DbList->SignatureListSize);
         DbSize -= DbList->SignatureListSize;
@@ -40,7 +45,7 @@ Traverse_SignatureList (
         printf("DbList->SignatureListSize at end of CompareGuid block- 0x%x\n", DbList->SignatureListSize);
         continue;
       }
-      ASSERT (DbList->SignatureHeaderSize == 0);
+
       SiglistHeaderSize = sizeof (EFI_SIGNATURE_LIST) + DbList->SignatureHeaderSize;
       Cert = (EFI_SIGNATURE_DATA *)((UINT8 *)DbList + SiglistHeaderSize);
       CertCount = (DbList->SignatureListSize - SiglistHeaderSize) / DbList->SignatureSize;
