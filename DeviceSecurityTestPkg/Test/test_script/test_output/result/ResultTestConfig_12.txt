@@ -1,0 +1,34 @@
+========================== new test case begin ============================
+
+--------------------------keywords list-----------------------------
+
+Event:
+PCRIndex  - 2
+EventType - 0x800000E1
+EventData - Type: EV_EFI_SPDM_FIRMWARE_BLOB
+TcgDeviceSecurityEvent2:
+Signature         - 'SPDM Device Sec2'
+Version           - 0x0002
+Length            - 0x0000005A
+AuthState         - 0x00000004
+DeviceType        - 0x00000001
+SubHeaderType     - 0x00000000
+SubHeaderLength   - 0x00000000
+SubHeaderUID      - 0x0000000000000000
+DevicePathLength  - 0x0000000000000016
+DevicePath        - PciRoot(0x0)/Pci(0x0,0x0)
+
+------------------------keywords list end--------------------------
+
+
+*************try to find keyword in the log ......
+
+
+***Can not find the keyword below in the log!!!
+Length            - 0x0000005A
+
+***found some errors in the log!!!
+*** So this test case failed :(
+
+******************************************************
+
