@@ -205,11 +205,8 @@ Description     - "SPDM MEASUREMENTS "
 *************try to find keyword in the log ......
 
 
-***Can not find the keyword below in the log!!!
-DescriptionSize - 0x000F
-
-***found some errors in the log!!!
-*** So this test case failed :(
+***keywords are all found in the log successfully :-)
+*** So this test case passed :-)
 
 ******************************************************
 
