@@ -24,11 +24,8 @@ SubHeaderLength   - 0x00000000
 *************try to find keyword in the log ......
 
 
-***Can not find the keyword below in the log!!!
-PCRIndex  - 0x01C40200 (NvIndex)
-
-***found some errors in the log!!!
-*** So this test case failed :(
+***keywords are all found in the log successfully :-)
+*** So this test case passed :-)
 
 ******************************************************
 
