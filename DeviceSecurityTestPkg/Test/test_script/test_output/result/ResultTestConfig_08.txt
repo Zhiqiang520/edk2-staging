@@ -3,8 +3,24 @@
 --------------------------keywords list-----------------------------
 
 Event:
+PCRIndex  - 1
+EventType - 0x800000E3
+DigestCount: 0x00000001
+HashAlgo : 0x000C
+Digest(0): D5A3A78BC245B55F8E0547B8A12B74C12CD0617102018130FEE7E93917B42EF7595888E4CC5B0A8E5CC95E14C4F81A35
+EventData - Type: EV_EFI_SPDM_DEVICE_POLICY
+VariableName       - B9C2B4F4-BF5F-462D-8ADF-C5C70AC35DAD
+UnicodeNameLength  - 0x0000000000000005
+VariableDataLength - 0x0000000000000549
+UnicodeName        - devdb
+EFI_SIGNATURE_LIST :
+SignatureType       - A5C059A1-94E4-4AA7-87B5-AB155C2BF072
+Event:
 PCRIndex  - 0x01C40200 (NvIndex)
 EventType - 0x00000003
+DigestCount: 0x00000001
+HashAlgo : 0x000C
+Digest(0): BB779D8DCFD76CFAD2F0F2DBB3E80BA2450938CCCF72A9B4FC3B7CD8D1BB2DADBC1E2EC678151F1FD546754F1E528E51
 EventData - Type: EV_NO_ACTION
 TcgNvIndexInstanceEvent:
 Signature       - 'NvIndexInstance '
@@ -12,16 +28,19 @@ Version         - 0x0001
 TcgDeviceSecurityEvent2:
 Signature         - 'SPDM Device Sec2'
 Version           - 0x0002
-Length            - 0x00000E4E
+Length            - 0x00000A4E
 AuthState         - 0x00000001
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000001
-SubHeaderLength   - 0x00000DDC
+SubHeaderLength   - 0x000009DC
 SubHeaderUID      - 0x0000000000000000
 SpdmCertChainSubHeader:
 SpdmVersion   - 0x0012
 SpdmSlotId    - 0x00
 SpdmHashAlgo  - 0x00000001
+SpdmCertChain:
+Length      - 0x09D4
+Digest      - 92D33279E38A5890E145EEC9D7DE0100051765AE0259798950D9EBEEF2A4ABCE
 Event:
 PCRIndex  - 0x01C40201 (NvIndex)
 EventType - 0x00000003
@@ -189,11 +208,8 @@ Description     - "SPDM MEASUREMENTS "
 *************try to find keyword in the log ......
 
 
-***Can not find the keyword below in the log!!!
-PCRIndex  - 0x01C40200 (NvIndex)
-
-***found some errors in the log!!!
-*** So this test case failed :(
+***keywords are all found in the log successfully :-)
+*** So this test case passed :-)
 
 ******************************************************
 

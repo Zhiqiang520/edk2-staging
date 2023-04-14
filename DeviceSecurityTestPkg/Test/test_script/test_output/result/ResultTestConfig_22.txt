@@ -245,7 +245,7 @@ Description     - "SPDM MEASUREMENTS "
 
 
 ***Can not find the keyword below in the log!!!
-PCRIndex  - 0x01C40200 (NvIndex)
+Event:
 
 ***found some errors in the log!!!
 *** So this test case failed :(
