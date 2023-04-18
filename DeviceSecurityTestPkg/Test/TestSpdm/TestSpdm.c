@@ -303,6 +303,18 @@ TestSpdm (
     //The valid certificate chain with trust anchor is in slot_1 of responder.
     SlotId = 1;
   }
+
+  Status = SpdmProtocol->GetCertificate (
+                           SpdmProtocol,
+                           SlotId,
+                           NULL,
+                           NULL
+                           );
+  if (EFI_ERROR (Status)) {
+    DEBUG ((DEBUG_ERROR, "GetCertificate - %r\n", Status));
+    return;
+  }
+
   Status = SpdmProtocol->StartSession (
                            SpdmProtocol,
                            USE_PSK,
