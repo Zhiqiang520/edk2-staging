@@ -425,7 +425,7 @@ CreateSpdmDriverContext (
     HasRspPubCert = TRUE;
     ZeroMem (&Parameter, sizeof (Parameter));
     Parameter.location = SpdmDataLocationLocal;
-    SpdmSetData (SpdmContext, SpdmDataPeerPublicCertChains, &Parameter, Data, DataSize);
+    SpdmSetData (SpdmContext, LIBSPDM_DATA_LOCAL_PUBLIC_CERT_CHAIN, &Parameter, Data, DataSize);
     // Do not free it.
   } else {
     HasRspPubCert = FALSE;
@@ -441,12 +441,12 @@ CreateSpdmDriverContext (
            //           SPDM_GET_CAPABILITIES_REQUEST_FLAGS_CHAL_CAP |
            SPDM_GET_CAPABILITIES_REQUEST_FLAGS_ENCRYPT_CAP |
            SPDM_GET_CAPABILITIES_REQUEST_FLAGS_MAC_CAP |
-           //           SPDM_GET_CAPABILITIES_REQUEST_FLAGS_MUT_AUTH_CAP |
+           SPDM_GET_CAPABILITIES_REQUEST_FLAGS_MUT_AUTH_CAP |
 #if (LIBSPDM_ENABLE_CAPABILITY_KEY_EX_CAP) || (LIBSPDM_ENABLE_CAPABILITY_PSK_EX_CAP)
            SPDM_GET_CAPABILITIES_REQUEST_FLAGS_KEY_EX_CAP |
 #endif
            //           SPDM_GET_CAPABILITIES_REQUEST_FLAGS_PSK_CAP_REQUESTER |
-           //           SPDM_GET_CAPABILITIES_REQUEST_FLAGS_ENCAP_CAP |
+           SPDM_GET_CAPABILITIES_REQUEST_FLAGS_ENCAP_CAP |
            SPDM_GET_CAPABILITIES_REQUEST_FLAGS_HBEAT_CAP |
            //           SPDM_GET_CAPABILITIES_REQUEST_FLAGS_KEY_UPD_CAP |
            //           SPDM_GET_CAPABILITIES_REQUEST_FLAGS_HANDSHAKE_IN_THE_CLEAR_CAP |
@@ -485,6 +485,8 @@ CreateSpdmDriverContext (
   SpdmSetData (SpdmContext, SpdmDataKeySchedule, &Parameter, &Data16, sizeof (Data16));
   Data8 = SPDM_ALGORITHMS_OPAQUE_DATA_FORMAT_1;
   SpdmSetData (SpdmContext, SpdmDataOtherParamsSsupport, &Parameter, &Data8, sizeof (Data8));
+  Data16 = SPDM_ALGORITHMS_BASE_ASYM_ALGO_TPM_ALG_RSASSA_2048;
+  SpdmSetData (SpdmContext, LIBSPDM_DATA_REQ_BASE_ASYM_ALG, &Parameter, &Data16, sizeof (Data16));
   IsRequrester = TRUE;
   SpdmReturn = SpdmSetData (SpdmContext, LIBSPDM_DATA_IS_REQUESTER, &Parameter, &IsRequrester, sizeof (IsRequrester));
   if (LIBSPDM_STATUS_IS_ERROR (SpdmReturn)) {

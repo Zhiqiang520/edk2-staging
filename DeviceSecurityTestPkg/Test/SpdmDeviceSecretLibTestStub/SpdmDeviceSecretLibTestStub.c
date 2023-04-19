@@ -685,7 +685,57 @@ SpdmRequesterDataSignFunc (
   IN OUT  UINTN                *SigSize
   )
 {
-  return FALSE;
+  EFI_STATUS  Status;
+  VOID        *Context;
+  VOID        *PrivatePem;
+  UINTN       PrivatePemSize;
+  BOOLEAN     Result;
+
+  Status = GetVariable2 (
+             L"PrivDevKey",
+             &gEdkiiDeviceSignatureDatabaseGuid,
+             &PrivatePem,
+             &PrivatePemSize
+             );
+  if (EFI_ERROR (Status)) {
+    return FALSE;
+  }
+
+  Result = SpdmAsymGetPrivateKeyFromPem (ReqBaseAsymAlg, PrivatePem, PrivatePemSize, NULL, &Context);
+  if (!Result) {
+    return FALSE;
+  }
+
+  if (IsDataHash) {
+    Result = SpdmReqAsymSignHash (
+               SpdmVersion,
+               OpCode,
+               ReqBaseAsymAlg,
+               BaseHashAlgo,
+               Context,
+               MessageHash,
+               HashSize,
+               Signature,
+               SigSize
+               );
+  } else {
+    Result = SpdmReqAsymSign (
+               SpdmVersion,
+               OpCode,
+               ReqBaseAsymAlg,
+               BaseHashAlgo,
+               Context,
+               MessageHash,
+               HashSize,
+               Signature,
+               SigSize
+               );
+  }
+
+  SpdmAsymFree (ReqBaseAsymAlg, Context);
+  FreePool (PrivatePem);
+
+  return Result;
 }
 
 /**

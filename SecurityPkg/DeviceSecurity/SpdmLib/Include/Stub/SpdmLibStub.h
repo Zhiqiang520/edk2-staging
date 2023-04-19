@@ -262,6 +262,8 @@ typedef struct {
 #define SpdmAsymGetPrivateKeyFromPem  libspdm_asym_get_private_key_from_pem
 #define SpdmAsymSign                  libspdm_asym_sign
 #define SpdmAsymSignHash              libspdm_asym_sign_hash
+#define SpdmReqAsymSign               libspdm_req_asym_sign
+#define SpdmReqAsymSignHash           libspdm_req_asym_sign_hash
 
 #define SpdmInitConnection                libspdm_init_connection
 #define SpdmGetDigest                     libspdm_get_digest

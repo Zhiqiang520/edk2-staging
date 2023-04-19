@@ -243,7 +243,10 @@ DEFINE CRYPT_LIB = OPENSSL
 ###################################################################################################
 
 [Components]
-  DeviceSecurityTestPkg/SpdmDeviceSecurityDxe/SpdmDeviceSecurityDxe.inf
+  DeviceSecurityTestPkg/SpdmDeviceSecurityDxe/SpdmDeviceSecurityDxe.inf{
+  <LibraryClasses>
+    SpdmDeviceSecretLib|DeviceSecurityTestPkg/Test/SpdmDeviceSecretLibTestStub/SpdmDeviceSecretLibTestStub.inf
+  }
   DeviceSecurityTestPkg/Test/DeviceSecurityPolicyStub/DeviceSecurityPolicyStub.inf
   DeviceSecurityTestPkg/Test/Tcg2Stub/Tcg2Stub.inf {
   <LibraryClasses>

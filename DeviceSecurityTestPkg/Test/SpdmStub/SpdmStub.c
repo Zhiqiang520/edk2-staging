@@ -297,7 +297,7 @@ MainEntryPoint (
 #endif
            //           SPDM_GET_CAPABILITIES_RESPONSE_FLAGS_PSK_CAP_RESPONDER |
            //           SPDM_GET_CAPABILITIES_RESPONSE_FLAGS_PSK_CAP_RESPONDER_WITH_CONTEXT |
-           //           SPDM_GET_CAPABILITIES_RESPONSE_FLAGS_ENCAP_CAP |
+           SPDM_GET_CAPABILITIES_RESPONSE_FLAGS_ENCAP_CAP |
            //           SPDM_GET_CAPABILITIES_RESPONSE_FLAGS_HBEAT_CAP |
            //           SPDM_GET_CAPABILITIES_RESPONSE_FLAGS_KEY_UPD_CAP |
 #if (LIBSPDM_ENABLE_CAPABILITY_KEY_EX_CAP) || (LIBSPDM_ENABLE_CAPABILITY_PSK_EX_CAP)
@@ -335,6 +335,8 @@ MainEntryPoint (
     Data32 &= ~SPDM_GET_CAPABILITIES_RESPONSE_FLAGS_MEAS_CAP_SIG;
     Data32 &= ~SPDM_GET_CAPABILITIES_RESPONSE_FLAGS_MEAS_CAP_NO_SIG;
   }
+
+  Data32 |= SPDM_GET_CAPABILITIES_RESPONSE_FLAGS_MUT_AUTH_CAP;
 
   SpdmSetData (SpdmContext, SpdmDataCapabilityFlags, &Parameter, &Data32, sizeof (Data32));
 
@@ -406,6 +408,10 @@ MainEntryPoint (
   SpdmSetData (SpdmContext, SpdmDataOtherParamsSsupport, &Parameter, &Data8, sizeof (Data8));
   IsRequrester = FALSE;
   SpdmSetData (SpdmContext, LIBSPDM_DATA_IS_REQUESTER, &Parameter, &IsRequrester, sizeof (IsRequrester));
+  Data8 = SPDM_KEY_EXCHANGE_RESPONSE_MUT_AUTH_REQUESTED_WITH_ENCAP_REQUEST;
+  SpdmSetData (SpdmContext, LIBSPDM_DATA_MUT_AUTH_REQUESTED, &Parameter, &Data8, sizeof (Data8));
+  Data16 = SPDM_ALGORITHMS_BASE_ASYM_ALGO_TPM_ALG_RSASSA_2048;
+  SpdmSetData (SpdmContext, LIBSPDM_DATA_REQ_BASE_ASYM_ALG, &Parameter, &Data16, sizeof (Data16));
 
   Status = gBS->InstallProtocolInterface (
                   &mSpdmTestDeviceContext.SpdmHandle,
