@@ -1,0 +1,95 @@
+﻿  **********************************************************************
+  ** Visual Studio 2019 Developer Command Prompt v16.9.4
+  ** Copyright (c) 2021 Microsoft Corporation
+  **********************************************************************
+  [vcvarsall.bat] Environment initialized for: 'x86'
+            PATH      = C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\\Extensions\Microsoft\IntelliCode\CLI;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\VC\VCPackages;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Team Tools\Performance Tools;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\vs2019\;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\Tools\devinit;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86;C:\Program Files (x86)\Windows Kits\10\bin\x86;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\Tools\;C:\edk2-staging_Zhiqiang\BaseTools\Bin\Win32;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\AdoptOpenJDK\jre-11.0.9.101-hotspot\bin;C:\Program Files\AdoptOpenJDK\jre-8.0.292.10-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Incredibuild;C:\Program Files\TortoiseSVN\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\LLVM\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\CMake\bin;C:\Program Files\Coverity\Coverity Static Analysis\bin;C:\Program Files\Git\cmd;C:\Users\zhaozhiq\bin;C:\Users\zhaozhiq\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\Llvm\bin;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja
+  
+       WORKSPACE      = C:\edk2-staging_Zhiqiang
+  EDK_TOOLS_PATH      = C:\edk2-staging_Zhiqiang\BaseTools
+  BASE_TOOLS_PATH     = C:\edk2-staging_Zhiqiang\BaseTools
+   EDK_TOOLS_BIN      = C:\edk2-staging_Zhiqiang\BaseTools\Bin\Win32
+       CONF_PATH      = C:\edk2-staging_Zhiqiang\Conf
+  
+  Using EDK2 in-source Basetools
+                 PATH = C:\edk2-staging_Zhiqiang\BaseTools\BinWrappers\WindowsLike;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\\Extensions\Microsoft\IntelliCode\CLI;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\VC\VCPackages;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Team Tools\Performance Tools;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\vs2019\;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\Tools\devinit;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86;C:\Program Files (x86)\Windows Kits\10\bin\x86;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\Tools\;C:\edk2-staging_Zhiqiang\BaseTools\Bin\Win32;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\AdoptOpenJDK\jre-11.0.9.101-hotspot\bin;C:\Program Files\AdoptOpenJDK\jre-8.0.292.10-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Incredibuild;C:\Program Files\TortoiseSVN\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\LLVM\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\CMake\bin;C:\Program Files\Coverity\Coverity Static Analysis\bin;C:\Program Files\Git\cmd;C:\Users\zhaozhiq\bin;C:\Users\zhaozhiq\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\Llvm\bin;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja
+           PYTHONPATH = C:\edk2-staging_Zhiqiang\BaseTools\Source\Python;
+  
+  
+  !!! WARNING !!! CLANG_BIN environment variable is not set
+    Found LLVM, setting CLANG_BIN environment variable to C:\Program Files\LLVM\bin\
+  
+  !!! WARNING !!! No CYGWIN_HOME set, gcc build may not be used !!!
+  
+  Build environment: Windows-10-10.0.17763-SP0
+  Build start time: 16:34:05, May.23 2023
+  
+  WORKSPACE        = c:\edk2-staging_zhiqiang
+  EDK_TOOLS_PATH   = c:\edk2-staging_zhiqiang\basetools
+  EDK_TOOLS_BIN    = c:\edk2-staging_zhiqiang\basetools\bin\win32
+  CONF_PATH        = c:\edk2-staging_zhiqiang\conf
+  PYTHON_COMMAND   = py -3
+  
+  
+  
+  Processing meta-data .Architecture(s)  = X64
+  Build target     = DEBUG
+  Toolchain        = VS2019
+  
+  Active Platform          = c:\edk2-staging_zhiqiang\EmulatorPkg\EmulatorPkg.dsc
+  Active Module            = c:\edk2-staging_zhiqiang\MdeModulePkg\Application\HelloWorld\HelloWorld.inf
+  .... done!
+  Generating code . done!
+  Generating makefile . done!
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\UefiLib\UefiLib.inf [X64]
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\UefiApplicationEntryPoint\UefiApplicationEntryPoint.inf [X64]
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\UefiRuntimeServicesTableLib\UefiRuntimeServicesTableLib.inf [X64]
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\UefiBootServicesTableLib\UefiBootServicesTableLib.inf [X64]
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\DxePcdLib\DxePcdLib.inf [X64]
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\BaseMemoryLib\BaseMemoryLib.inf [X64]
+  Building ... c:\edk2-staging_zhiqiang\MdeModulePkg\Library\PeiDxeDebugLibReportStatusCode\PeiDxeDebugLibReportStatusCode.inf [X64]
+  Building ... c:\edk2-staging_zhiqiang\MdeModulePkg\Library\DxeReportStatusCodeLib\DxeReportStatusCodeLib.inf [X64]
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\BaseLib\BaseLib.inf [X64]
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\BaseDebugPrintErrorLevelLib\BaseDebugPrintErrorLevelLib.inf [X64]
+  	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29910\bin\Hostx86\x64\cl.exe" /Foc:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdePkg\Library\UefiLib\UefiLib\OUTPUT\.\ /showIncludes /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Z7 /Gw -D DISABLE_NEW_DEPRECATED_INTERFACES /Od /Oy- /Ic:\edk2-staging_zhiqiang\MdePkg\Library\UefiLib  /Ic:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdePkg\Library\UefiLib\UefiLib\DEBUG  /Ic:\edk2-staging_zhiqiang\MdePkg  /Ic:\edk2-staging_zhiqiang\MdePkg\Include  /Ic:\edk2-staging_zhiqiang\MdePkg\Test\UnitTest\Include  /Ic:\edk2-staging_zhiqiang\MdePkg\Include\X64 @c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdePkg\Library\UefiLib\UefiLib\OUTPUT\cc_resp_5.txt
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\RegisterFilterLibNull\RegisterFilterLibNull.inf [X64]
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\UefiDevicePathLib\UefiDevicePathLib.inf [X64]
+  	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29910\bin\Hostx86\x64\cl.exe" /Foc:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Library\PeiDxeDebugLibReportStatusCode\PeiDxeDebugLibReportStatusCode\OUTPUT\.\ /showIncludes /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Z7 /Gw -D DISABLE_NEW_DEPRECATED_INTERFACES /Od /Oy- /Ic:\edk2-staging_zhiqiang\MdeModulePkg\Library\PeiDxeDebugLibReportStatusCode  /Ic:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Library\PeiDxeDebugLibReportStatusCode\PeiDxeDebugLibReportStatusCode\DEBUG  /Ic:\edk2-staging_zhiqiang\MdePkg  /Ic:\edk2-staging_zhiqiang\MdePkg\Include  /Ic:\edk2-staging_zhiqiang\MdePkg\Test\UnitTest\Include  /Ic:\edk2-staging_zhiqiang\MdePkg\Include\X64  /Ic:\edk2-staging_zhiqiang\MdeModulePkg  /Ic:\edk2-staging_zhiqiang\MdeModulePkg\Include  /Ic:\edk2-staging_zhiqiang\MdeModulePkg\Library\BrotliCustomDecompressLib\brotli\c\include c:\edk2-staging_zhiqiang\MdeModulePkg\Library\PeiDxeDebugLibReportStatusCode\DebugLib.c
+cl : Command line warning D9025: overriding '/O1' with '/Od'
+  DebugLib.c
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\UefiMemoryAllocationLib\UefiMemoryAllocationLib.inf [X64]
+cl : Command line warning D9025: overriding '/O1' with '/Od'
+  Building ... c:\edk2-staging_zhiqiang\MdePkg\Library\BasePrintLib\BasePrintLib.inf [X64]
+  UefiLib.c
+  UefiDriverModel.c
+  UefiLibPrint.c
+  	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29910\bin\Hostx86\x64\lib.exe" /NOLOGO /LTCG /OUT:c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Library\PeiDxeDebugLibReportStatusCode\PeiDxeDebugLibReportStatusCode\OUTPUT\PeiDxeDebugLibReportStatusCode.lib @c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Library\PeiDxeDebugLibReportStatusCode\PeiDxeDebugLibReportStatusCode\OUTPUT\object_files.lst
+  UefiNotTiano.c
+  Acpi.c
+  Console.c
+  	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29910\bin\Hostx86\x64\lib.exe" /NOLOGO /LTCG /OUT:c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdePkg\Library\UefiLib\UefiLib\OUTPUT\UefiLib.lib @c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdePkg\Library\UefiLib\UefiLib\OUTPUT\object_files.lst
+  Building ... c:\edk2-staging_zhiqiang\MdeModulePkg\Application\HelloWorld\HelloWorld.inf [X64]
+  	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29910\bin\Hostx86\x64\link.exe" /OUT:c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG\HelloWorld.dll /NOLOGO /NODEFAULTLIB /IGNORE:4001 /IGNORE:4281 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:_ModuleEntryPoint /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /DEBUG /ALIGN:4096 /FILEALIGN:4096 /SUBSYSTEM:CONSOLE /EXPORT:InitializeDriver=_ModuleEntryPoint /BASE:0x10000 /WHOLEARCHIVE  @c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\OUTPUT\static_library_files.lst
+     Creating library c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG\HelloWorld.lib and object c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG\HelloWorld.exp
+  Generating code
+  Finished generating code
+  	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.28.29910\bin\Hostx86\x64\link.exe" /OUT:c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG\HelloWorld.dll /NOLOGO /NODEFAULTLIB /IGNORE:4001 /IGNORE:4281 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:_ModuleEntryPoint /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /DEBUG /ALIGN:4096 /FILEALIGN:4096 /SUBSYSTEM:CONSOLE /EXPORT:InitializeDriver=_ModuleEntryPoint /BASE:0x10000  @c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\OUTPUT\static_library_files.lst
+     Creating library c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG\HelloWorld.lib and object c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG\HelloWorld.exp
+  Generating code
+  Finished generating code
+  	"GenFw" -e UEFI_APPLICATION -o c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\OUTPUT\HelloWorld.efi c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG\HelloWorld.dll
+  	copy /y c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\OUTPUT\HelloWorld.efi c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG
+          1 file(s) copied.
+  	copy /y c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\OUTPUT\HelloWorld.efi c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\HelloWorld.efi
+          1 file(s) copied.
+  	copy /y c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG\*.map c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\OUTPUT
+  c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG\HelloWorld.map
+          1 file(s) copied.
+  	copy /y c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG\*.pdb c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\OUTPUT
+  c:\edk2-staging_zhiqiang\Build\EmulatorX64\DEBUG_VS2019\X64\MdeModulePkg\Application\HelloWorld\HelloWorld\DEBUG\HelloWorld.pdb
+          1 file(s) copied.
+  
+  - Done -
+  Build end time: 16:34:13, May.23 2023
+  Build total time: 00:00:07
+  
