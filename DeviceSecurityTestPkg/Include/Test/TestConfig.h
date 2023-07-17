@@ -30,6 +30,7 @@
 #define TEST_CONFIG_SECP_521_R1_CHACHA20_POLY1305     19
 #define TEST_CONFIG_NO_CHAL_CAP_NO_ROOT_CA            20
 #define TEST_CONFIG_MULTIPLE_CERT_IN_DB               21
+// Valid CertChain but not RootCertMatch in slot_0, valid CertChain and RootCertMatch in slot_1, nothing in slot_2~7.
 #define TEST_CONFIG_DIFF_CERT_IN_DIFF_SLOT            22
 #define TEST_CONFIG_NO_EFI_CERT_X509_GUID_IN_DB       23
 #define TEST_CONFIG_SPDM_MESSAGE_VERSION_11           24
