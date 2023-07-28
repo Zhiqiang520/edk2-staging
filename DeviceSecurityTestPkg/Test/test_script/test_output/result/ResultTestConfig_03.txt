@@ -5,6 +5,9 @@
 Event:
 PCRIndex  - 0x01C40200 (NvIndex)
 EventType - 0x00000003
+DigestCount: 0x00000001
+HashAlgo : 0x000C
+Digest(0): F566A01585A2DE41CE4EC6F4B4C1FDEF8F6AA7F3370DB440B95D197D6A6E8E063426C433468F3018673D6F1067BCB0F2
 EventData - Type: EV_NO_ACTION
 TcgNvIndexInstanceEvent:
 Signature       - 'NvIndexInstance '
@@ -21,6 +24,24 @@ SpdmCertChainSubHeader:
 SpdmVersion   - 0x0012
 SpdmSlotId    - 0x00
 SpdmHashAlgo  - 0x00000001
+Event:
+PCRIndex  - 0x01C40200 (NvIndex)
+EventType - 0x00000003
+DigestCount: 0x00000001
+HashAlgo : 0x000C
+Digest(0): 29BB53CC1DA95C223BB0F877D2AC483366C44178B82F3E7DD770C312CF75A22F66FAC3CFB707663DC2BD53F88C520FDD
+EventData - Type: EV_NO_ACTION
+TcgNvIndexInstanceEvent:
+Signature       - 'NvIndexInstance '
+Version         - 0x0001
+TcgDeviceSecurityEvent2:
+Signature         - 'SPDM Device Sec2'
+Version           - 0x0002
+Length            - 0x0000007A
+AuthState         - 0x00000004
+DeviceType        - 0x00000001
+SubHeaderType     - 0x00000001
+SubHeaderLength   - 0x00000008
 SpdmCertChainSubHeader:
 SpdmVersion   - 0x0012
 SpdmSlotId    - 0x01

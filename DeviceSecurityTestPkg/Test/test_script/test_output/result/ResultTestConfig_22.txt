@@ -20,29 +20,6 @@ PCRIndex  - 0x01C40200 (NvIndex)
 EventType - 0x00000003
 DigestCount: 0x00000001
 HashAlgo : 0x000C
-Digest(0): F566A01585A2DE41CE4EC6F4B4C1FDEF8F6AA7F3370DB440B95D197D6A6E8E063426C433468F3018673D6F1067BCB0F2
-EventData - Type: EV_NO_ACTION
-TcgNvIndexInstanceEvent:
-Signature       - 'NvIndexInstance '
-Version         - 0x0001
-TcgDeviceSecurityEvent2:
-Signature         - 'SPDM Device Sec2'
-Version           - 0x0002
-Length            - 0x0000007A
-AuthState         - 0x00000001
-DeviceType        - 0x00000001
-SubHeaderType     - 0x00000001
-SubHeaderLength   - 0x00000008
-SubHeaderUID      - 0x0000000000000000
-SpdmCertChainSubHeader:
-SpdmVersion   - 0x0012
-SpdmSlotId    - 0x00
-SpdmHashAlgo  - 0x00000001
-Event:
-PCRIndex  - 0x01C40200 (NvIndex)
-EventType - 0x00000003
-DigestCount: 0x00000001
-HashAlgo : 0x000C
 Digest(0): 663C813C0707F799EED11902308E1D54A87557EE9273D0499E954E7847EC156F2B49735763E01EC68B6B930BEE20DDEF
 EventData - Type: EV_NO_ACTION
 TcgNvIndexInstanceEvent:
@@ -245,7 +222,7 @@ Description     - "SPDM MEASUREMENTS "
 
 
 ***Can not find the keyword below in the log!!!
-Event:
+Digest(0): 663C813C0707F799EED11902308E1D54A87557EE9273D0499E954E7847EC156F2B49735763E01EC68B6B930BEE20DDEF
 
 ***found some errors in the log!!!
 *** So this test case failed :(
