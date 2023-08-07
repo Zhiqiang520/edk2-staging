@@ -1,5 +1,6 @@
 @echo off
-py -3 launch_test.py
+REM py -3 launch_test.py
+py -3 launch_test_coverage.py
 
 SET test_output=Z:\Build\EmulatorX64\DEBUG_VS2019\X64\test_output
 if not exist %test_output%\result mkdir %test_output%\result

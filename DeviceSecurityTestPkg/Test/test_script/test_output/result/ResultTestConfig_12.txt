@@ -24,11 +24,8 @@ DevicePath        - PciRoot(0x0)/Pci(0x0,0x0)
 *************try to find keyword in the log ......
 
 
-***Can not find the keyword below in the log!!!
-Length            - 0x0000005A
-
-***found some errors in the log!!!
-*** So this test case failed :(
+***keywords are all found in the log successfully :-)
+*** So this test case passed :-)
 
 ******************************************************
 

@@ -208,8 +208,11 @@ Description     - "SPDM MEASUREMENTS "
 *************try to find keyword in the log ......
 
 
-***keywords are all found in the log successfully :-)
-*** So this test case passed :-)
+***Can not find the keyword below in the log!!!
+Digest(0): BB779D8DCFD76CFAD2F0F2DBB3E80BA2450938CCCF72A9B4FC3B7CD8D1BB2DADBC1E2EC678151F1FD546754F1E528E51
+
+***found some errors in the log!!!
+*** So this test case failed :(
 
 ******************************************************
 
