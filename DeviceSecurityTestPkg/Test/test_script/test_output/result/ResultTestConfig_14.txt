@@ -1,6 +1,6 @@
 ========================== new test case begin ============================
 
---------------------------keywords list-----------------------------
+--------------------------ExpectKeywords list start------------------------
 
 Event:
 PCRIndex  - 1
@@ -30,16 +30,18 @@ DeviceType        - 0x00000001
 SubHeaderType     - 0x00000001
 SubHeaderLength   - 0x00000000
 
-------------------------keywords list end--------------------------
+------------------------ExpectKeywords list end--------------------------
 
 
-*************try to find keyword in the log ......
+*************try to find Keyword in the log ......
 
 
-***Can not find the keyword below in the log!!!
+***Can not find the following ExpectKeyword in the log!!!
+
 PCRIndex  - 0x01C40200 (NvIndex)
 
-***found some errors in the log!!!
+***not found ExpectKeyword in the log!!!
+
 *** So this test case failed :(
 
 ******************************************************

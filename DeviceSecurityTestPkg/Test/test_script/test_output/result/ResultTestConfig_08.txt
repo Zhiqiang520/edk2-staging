@@ -1,6 +1,6 @@
 ========================== new test case begin ============================
 
---------------------------keywords list-----------------------------
+--------------------------ExpectKeywords list start------------------------
 
 Event:
 PCRIndex  - 1
@@ -202,16 +202,29 @@ Uid             - 0x0000000000000000
 DescriptionSize - 0x0012
 Description     - "SPDM MEASUREMENTS "
 
-------------------------keywords list end--------------------------
+------------------------ExpectKeywords list end--------------------------
 
 
-*************try to find keyword in the log ......
+------------------------ErrorKeywords list start-------------------------
+
+Digest(0): D15717B416B7357B2EAA87C05C27016C87F8E44F566BD8E38E44D008D328405DBB2CBE4292B2619700A9E7540AAEEAB1
+EventData - Type: EV_EFI_SPDM_DEVICE_AUTHORITY
+AuthState         - 0x00000002
+AuthState         - 0x00000003
+AuthState         - 0x00000004
+
+------------------------ErrorKeywords list end---------------------------
 
 
-***Can not find the keyword below in the log!!!
+*************try to find Keyword in the log ......
+
+
+***Can not find the following ExpectKeyword in the log!!!
+
 Digest(0): BB779D8DCFD76CFAD2F0F2DBB3E80BA2450938CCCF72A9B4FC3B7CD8D1BB2DADBC1E2EC678151F1FD546754F1E528E51
 
-***found some errors in the log!!!
+***not found ExpectKeyword in the log!!!
+
 *** So this test case failed :(
 
 ******************************************************

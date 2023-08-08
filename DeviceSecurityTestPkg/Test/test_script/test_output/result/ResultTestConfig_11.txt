@@ -1,6 +1,6 @@
 ========================== new test case begin ============================
 
---------------------------keywords list-----------------------------
+--------------------------ExpectKeywords list start------------------------
 
 Event:
 PCRIndex  - 1
@@ -16,13 +16,13 @@ UnicodeName        - devdb
 EFI_SIGNATURE_LIST :
 SignatureType       - A5C059A1-94E4-4AA7-87B5-AB155C2BF072
 
-------------------------keywords list end--------------------------
+------------------------ExpectKeywords list end--------------------------
 
 
-*************try to find keyword in the log ......
+*************try to find Keyword in the log ......
 
 
-***keywords are all found in the log successfully :-)
+***found all ExpectKeywords and not found any ErrorKeyword in the log :-)
 *** So this test case passed :-)
 
 ******************************************************

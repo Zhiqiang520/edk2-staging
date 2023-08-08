@@ -1,6 +1,6 @@
 ========================== new test case begin ============================
 
---------------------------keywords list-----------------------------
+--------------------------ExpectKeywords list start------------------------
 
 Event:
 PCRIndex  - 0x01C40200 (NvIndex)
@@ -28,14 +28,40 @@ SpdmVersion   - 0x0012
 SpdmSlotId    - 0x00
 SpdmHashAlgo  - 0x00000001
 
-------------------------keywords list end--------------------------
+------------------------ExpectKeywords list end--------------------------
 
 
-*************try to find keyword in the log ......
+------------------------ErrorKeywords list start-------------------------
+
+Digest(0): D15717B416B7357B2EAA87C05C27016C87F8E44F566BD8E38E44D008D328405DBB2CBE4292B2619700A9E7540AAEEAB1
+EventData - Type: EV_EFI_SPDM_DEVICE_AUTHORITY
+DescriptionSize - 0x000F
+Description     - "SPDM CHALLENGE "
+DescriptionSize - 0x0014
+Description     - "SPDM CHALLENGE_AUTH "
+AuthState         - 0x00000000
+AuthState         - 0x00000001
+AuthState         - 0x00000002
+AuthState         - 0x00000003
+EventData - Type: EV_EFI_SPDM_FIRMWARE_BLOB
+EventData - Type: EV_EFI_SPDM_FIRMWARE_CONFIG
+DescriptionSize - 0x0016
+Description     - "SPDM GET_MEASUREMENTS "
+DescriptionSize - 0x0012
+Description     - "SPDM MEASUREMENTS "
+
+------------------------ErrorKeywords list end---------------------------
 
 
-***keywords are all found in the log successfully :-)
-*** So this test case passed :-)
+*************try to find Keyword in the log ......
+
+
+***find the following ErrorKeyword in the log!!!
+
+AuthState         - 0x00000000
+
+***found ErrorKeyword in the log!!!
+*** So this test case failed :(
 
 ******************************************************
 

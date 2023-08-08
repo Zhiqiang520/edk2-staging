@@ -1,6 +1,6 @@
 ========================== new test case begin ============================
 
---------------------------keywords list-----------------------------
+--------------------------ExpectKeywords list start------------------------
 
 Event:
 PCRIndex  - 1
@@ -199,13 +199,13 @@ Uid             - 0x0000000000000000
 DescriptionSize - 0x0012
 Description     - "SPDM MEASUREMENTS "
 
-------------------------keywords list end--------------------------
+------------------------ExpectKeywords list end--------------------------
 
 
-*************try to find keyword in the log ......
+*************try to find Keyword in the log ......
 
 
-***keywords are all found in the log successfully :-)
+***found all ExpectKeywords and not found any ErrorKeyword in the log :-)
 *** So this test case passed :-)
 
 ******************************************************
