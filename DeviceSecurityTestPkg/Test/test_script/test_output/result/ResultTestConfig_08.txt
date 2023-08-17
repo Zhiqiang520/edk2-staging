@@ -219,13 +219,8 @@ AuthState         - 0x00000004
 *************try to find Keyword in the log ......
 
 
-***Can not find the following ExpectKeyword in the log!!!
-
-Digest(0): BB779D8DCFD76CFAD2F0F2DBB3E80BA2450938CCCF72A9B4FC3B7CD8D1BB2DADBC1E2EC678151F1FD546754F1E528E51
-
-***not found ExpectKeyword in the log!!!
-
-*** So this test case failed :(
+***found all ExpectKeywords and not found any ErrorKeyword in the log :-)
+*** So this test case passed :-)
 
 ******************************************************
 
