@@ -226,3 +226,9 @@
         Uid             - 0x0000000000000000
         DescriptionSize - 0x0012
         Description     - "SPDM MEASUREMENTS "
+
+ErrorKeyword start:
+      AuthState         - 0x00000001
+      AuthState         - 0x00000002
+      AuthState         - 0x00000003
+      AuthState         - 0x00000004

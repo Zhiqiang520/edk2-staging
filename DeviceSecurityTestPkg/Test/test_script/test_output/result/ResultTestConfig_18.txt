@@ -38,6 +38,9 @@ SpdmCertChainSubHeader:
 SpdmVersion   - 0x0012
 SpdmSlotId    - 0x00
 SpdmHashAlgo  - 0x00000001
+SpdmCertChain:
+Length      - 0x0DD4
+Digest      - 4641CA0B16CFF841A9BAB4B0BB182F47F76A3BEE8E9EFBE544DDE020197B9D2C
 Event:
 PCRIndex  - 1
 EventType - 0x800000E4

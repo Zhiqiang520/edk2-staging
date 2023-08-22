@@ -218,6 +218,16 @@ Description     - "SPDM MEASUREMENTS "
 ------------------------ExpectKeywords list end--------------------------
 
 
+------------------------ErrorKeywords list start-------------------------
+
+AuthState         - 0x00000001
+AuthState         - 0x00000002
+AuthState         - 0x00000003
+AuthState         - 0x00000004
+
+------------------------ErrorKeywords list end---------------------------
+
+
 *************try to find Keyword in the log ......
 
 

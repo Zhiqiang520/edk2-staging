@@ -56,12 +56,8 @@ Description     - "SPDM MEASUREMENTS "
 *************try to find Keyword in the log ......
 
 
-***find the following ErrorKeyword in the log!!!
-
-AuthState         - 0x00000000
-
-***found ErrorKeyword in the log!!!
-*** So this test case failed :(
+***found all ExpectKeywords and not found any ErrorKeyword in the log :-)
+*** So this test case passed :-)
 
 ******************************************************
 

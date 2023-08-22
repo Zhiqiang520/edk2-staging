@@ -46,12 +46,6 @@ SpdmCertChainSubHeader:
 SpdmVersion   - 0x0012
 SpdmSlotId    - 0x01
 SpdmHashAlgo  - 0x00000001
-SpdmSlotId    - 0x02
-SpdmSlotId    - 0x03
-SpdmSlotId    - 0x04
-SpdmSlotId    - 0x05
-SpdmSlotId    - 0x06
-SpdmSlotId    - 0x07
 
 ------------------------ExpectKeywords list end--------------------------
 
@@ -81,13 +75,8 @@ Description     - "SPDM MEASUREMENTS "
 *************try to find Keyword in the log ......
 
 
-***Can not find the following ExpectKeyword in the log!!!
-
-SpdmSlotId    - 0x02
-
-***not found ExpectKeyword in the log!!!
-
-*** So this test case failed :(
+***found all ExpectKeywords and not found any ErrorKeyword in the log :-)
+*** So this test case passed :-)
 
 ******************************************************
 

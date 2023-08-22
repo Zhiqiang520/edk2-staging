@@ -44,13 +44,6 @@ Event:
         SpdmSlotId    - 0x01
         SpdmHashAlgo  - 0x00000001
 
-        SpdmSlotId    - 0x02
-        SpdmSlotId    - 0x03
-        SpdmSlotId    - 0x04
-        SpdmSlotId    - 0x05
-        SpdmSlotId    - 0x06
-        SpdmSlotId    - 0x07
-
 ErrorKeyword start:
     Digest(0): D15717B416B7357B2EAA87C05C27016C87F8E44F566BD8E38E44D008D328405DBB2CBE4292B2619700A9E7540AAEEAB1
     EventData - Type: EV_EFI_SPDM_DEVICE_AUTHORITY

@@ -38,21 +38,7 @@
         SpdmCertChain:
           Length      - 0x0DD4
           Digest      - 4641CA0B16CFF841A9BAB4B0BB182F47F76A3BEE8E9EFBE544DDE020197B9D2C
-  Event:
-    PCRIndex  - 1
-    EventType - 0x800000E4
-    DigestCount: 0x00000001
-    HashAlgo : 0x000C
-    Digest(0): D15717B416B7357B2EAA87C05C27016C87F8E44F566BD8E38E44D008D328405DBB2CBE4292B2619700A9E7540AAEEAB1
-    EventData - Type: EV_EFI_SPDM_DEVICE_AUTHORITY
-      VariableName       - B9C2B4F4-BF5F-462D-8ADF-C5C70AC35DAD
-      UnicodeNameLength  - 0x0000000000000005
-      VariableDataLength - 0x000000000000052D
-      UnicodeName        - devdb
 
-      EFI_SIGNATURE_DATA :
-        SignatureOwner    - AA1A0732-8AFD-4632-962D-FF855626F501
-        
   Event:
     PCRIndex  - 2
     EventType - 0x800000E1
@@ -201,3 +187,13 @@
         Uid             - 0x0000000000000000
         DescriptionSize - 0x0012
         Description     - "SPDM MEASUREMENTS "
+
+ErrorKeyword start:
+    Digest(0): D15717B416B7357B2EAA87C05C27016C87F8E44F566BD8E38E44D008D328405DBB2CBE4292B2619700A9E7540AAEEAB1
+    EventData - Type: EV_EFI_SPDM_DEVICE_AUTHORITY
+
+        DescriptionSize - 0x000F
+        Description     - "SPDM CHALLENGE "
+
+        DescriptionSize - 0x0014
+        Description     - "SPDM CHALLENGE_AUTH "
