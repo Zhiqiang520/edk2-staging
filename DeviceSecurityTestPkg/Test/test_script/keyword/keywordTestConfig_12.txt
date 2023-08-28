@@ -98,6 +98,19 @@
           MeasurementSpec                - 0x01
           Measurement:
             DMTFSpecMeasurementValueType - 0x00
+
+  Event:
+    PCRIndex  - 0x01C40201 (NvIndex)
+    EventType - 0x00000003
+
+    EventData - Type: EV_NO_ACTION
+      TcgNvIndexDynamicEvent:
+        Signature       - 'NvIndexDynamic  '
+        Version         - 0x0001
+        Uid             - 0x0000000000000000
+        DescriptionSize - 0x0012
+        Description     - "SPDM MEASUREMENTS "
+
   Event:
     PCRIndex  - 2
     EventType - 0x800000E1
@@ -201,6 +214,3 @@
 ErrorKeyword start:
         DescriptionSize - 0x0016
         Description     - "SPDM GET_MEASUREMENTS "
-
-        DescriptionSize - 0x0012
-        Description     - "SPDM MEASUREMENTS "
