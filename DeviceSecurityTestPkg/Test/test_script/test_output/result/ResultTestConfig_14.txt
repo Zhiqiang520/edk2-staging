@@ -25,7 +25,7 @@ TcgDeviceSecurityEvent2:
 Signature         - 'SPDM Device Sec2'
 Version           - 0x0002
 Length            - 0x00000072
-AuthState         - 0x000000ff
+AuthState         - 0x000000FF
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000001
 SubHeaderLength   - 0x00000000
@@ -36,13 +36,8 @@ SubHeaderLength   - 0x00000000
 *************try to find Keyword in the log ......
 
 
-***Can not find the following ExpectKeyword in the log!!!
-
-PCRIndex  - 0x01C40200 (NvIndex)
-
-***not found ExpectKeyword in the log!!!
-
-*** So this test case failed :(
+***found all ExpectKeywords and not found any ErrorKeyword in the log :-)
+*** So this test case passed :-)
 
 ******************************************************
 

@@ -64,7 +64,7 @@ def main():
                "<div classs='dateTag'><div class='dateHead'>Test Time: &nbsp</div><div class='timeValue'> {}</div></div>"
     time_div = time_div.format(build_date, build_time)
     version_table = '''<table class="zoomStyle" border="0"
-                       cellspacing="1" cellpadding="1"><tr><th width="30%"> Repository</th><th width="30%">Branch</th><th width="40">Latest Commit</th></tr><tr><td width="20%" class="platBold">EDK2</td><td width="35%">DeviceSecurity</td><td>''' + edk2_version + '''</td></tr></table>'''
+                       cellspacing="1" cellpadding="1"><tr><th width="30%"> Repository</th><th width="30%">Branch</th><th width="40">Latest Commit</th></tr><tr><td width="20%" class="platBold">edk2-staging</td><td width="35%">DeviceSecurity</td><td>''' + edk2_version + '''</td></tr></table>'''
     summary_table = '''<table class="zoomStyle" border="0" cellspacing="1" cellpadding="1">
                         <tr><th>Configuration</th><th>Pass</th><th>Fail</th><th>Total</th></tr>{}</table><br>'''
     summary_row = ''

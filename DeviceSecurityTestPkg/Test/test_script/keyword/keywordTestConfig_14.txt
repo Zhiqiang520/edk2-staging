@@ -24,7 +24,7 @@
       Signature         - 'SPDM Device Sec2'
       Version           - 0x0002
       Length            - 0x00000072
-      AuthState         - 0x000000ff
+      AuthState         - 0x000000FF
       DeviceType        - 0x00000001
       SubHeaderType     - 0x00000001
       SubHeaderLength   - 0x00000000
