@@ -148,6 +148,9 @@ MeasureVariable (
       );
   }
 
+  const char *code_str = "my_test_name in DeployCert.c";
+  DEBUG ((DEBUG_INFO, "hi, %s.\n", code_str));
+
   DEBUG ((EFI_D_INFO, "VariableDxe: MeasureVariable (Pcr - %x, EventType - %x, ", (UINTN)7, (UINTN)EV_EFI_SPDM_DEVICE_POLICY));
   DEBUG ((EFI_D_INFO, "VariableName - %s, VendorGuid - %g)\n", VarName, VendorGuid));
 

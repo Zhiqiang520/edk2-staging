@@ -931,7 +931,7 @@ BasePrintLibSPrintMarker (
 
           case 's':
           case 'S':
-            Flags |= ARGUMENT_UNICODE;
+            // Flags |= ARGUMENT_UNICODE;
           //
           // break skipped on purpose
           //

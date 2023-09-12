@@ -19,6 +19,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include <Library/MemoryAllocationLib.h>
 #include <Library/UefiRuntimeServicesTableLib.h>
 #include <Test/TestConfig.h>
+#include <wchar.h>
 
 EDKII_DEVICE_SECURITY_POLICY  mDeviceSecurityPolicyNone = {
   EDKII_DEVICE_SECURITY_POLICY_REVISION,
@@ -87,7 +88,9 @@ GetDevicePolicy (
 
   CopyMem (DeviceSecurityPolicy, &mDeviceSecurityPolicyNone, sizeof (EDKII_DEVICE_SECURITY_POLICY));
 
-  DEBUG ((DEBUG_INFO, "GetDevicePolicy - 0x%g\n", &DeviceId->DeviceType));
+  // const wchar_t *code_str = L"my_test_name";
+  const char *code_str = "my_test_name";
+  DEBUG ((DEBUG_INFO, "hi, %s. GetDevicePolicy - 0x%g\n", code_str, &DeviceId->DeviceType));
 
   if (!CompareGuid (&DeviceId->DeviceType, &gEdkiiDeviceIdentifierTypePciGuid)) {
     return EFI_SUCCESS;

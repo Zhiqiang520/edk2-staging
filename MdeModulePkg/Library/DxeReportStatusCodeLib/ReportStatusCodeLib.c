@@ -93,6 +93,8 @@ InternalReportStatusCode (
       return EFI_UNSUPPORTED;
     }
 
+  // ASSERT(FALSE);
+
     //
     // A Report Status Code Protocol is present in system, so pass in all the parameters to the service.
     //

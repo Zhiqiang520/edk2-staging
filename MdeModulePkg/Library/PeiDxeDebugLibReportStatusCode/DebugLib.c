@@ -55,6 +55,11 @@ DebugPrint (
 {
   VA_LIST  Marker;
 
+  // while(1)
+  // {
+  //   ;
+  // }
+
   VA_START (Marker, Format);
   DebugVPrint (ErrorLevel, Format, Marker);
   VA_END (Marker);
@@ -287,6 +292,11 @@ DebugPrintMarker (
       return;
     }
   }
+
+  // while(1)
+  // {
+  //   ;
+  // }
 
   //
   // Send the DebugInfo record
