@@ -135,7 +135,6 @@
         DescriptionSize - 0x0016
         Description     - "SPDM GET_MEASUREMENTS "
         DataSize        - 0x0020
-        Data            - 0000000000000000000000000000000000000000000000000000000000000000
   Event:
     PCRIndex  - 0x01C40201 (NvIndex)
     EventType - 0x00000003
@@ -147,3 +146,4 @@
         Uid             - 0x0000000000000000
         DescriptionSize - 0x0012
         Description     - "SPDM MEASUREMENTS "
+        DataSize        - 0x0020
