@@ -12,7 +12,7 @@
       SubHeaderType     - 0x00000000
 
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:
@@ -32,7 +32,7 @@
       DeviceType        - 0x00000001
       SubHeaderType     - 0x00000000
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:
@@ -54,7 +54,7 @@
       SubHeaderType     - 0x00000000
 
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:
@@ -75,7 +75,7 @@
       DeviceType        - 0x00000001
       SubHeaderType     - 0x00000000
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:
@@ -95,7 +95,7 @@
       DeviceType        - 0x00000001
       SubHeaderType     - 0x00000000
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:
@@ -115,7 +115,7 @@
       DeviceType        - 0x00000001
       SubHeaderType     - 0x00000000
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:

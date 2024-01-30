@@ -1,5 +1,5 @@
   Event:
-    PCRIndex  - 1
+    PCRIndex  - 7
     EventType - 0x800000E3
     DigestCount: 0x00000001
     HashAlgo : 0x000C
@@ -9,7 +9,7 @@
       UnicodeNameLength  - 0x0000000000000005
       VariableDataLength - 0x0000000000000549
       UnicodeName        - devdb
-    
+
       EFI_SIGNATURE_LIST :
         SignatureType       - A5C059A1-94E4-4AA7-87B5-AB155C2BF072
   Event:
@@ -17,7 +17,7 @@
     EventType - 0x00000003
     DigestCount: 0x00000001
     HashAlgo : 0x000C
-    Digest(0): 43F9514E5D0854D7B8E2FB3B550D55A79B4119857F0045148A7F131A4D214315779704EA30C69E0C2495886633FFC821
+    Digest(0): D3A2758D0004B07B4232660D3B322B80B829F8C2221E1867C1BD357120236D7E59F0E243B57DF69E55869CC73FC42861
     EventData - Type: EV_NO_ACTION
       TcgNvIndexInstanceEvent:
         Signature       - 'NvIndexInstance '
@@ -32,14 +32,14 @@
       SubHeaderLength   - 0x00000DDC
       SubHeaderUID      - 0x0000000000000000
       SpdmCertChainSubHeader:
-        SpdmVersion   - 0x0012
+        SpdmVersion   - 0x0013
         SpdmSlotId    - 0x00
         SpdmHashAlgo  - 0x00000001
         SpdmCertChain:
           Length      - 0x0DD4
           Digest      - 4641CA0B16CFF841A9BAB4B0BB182F47F76A3BEE8E9EFBE544DDE020197B9D2C
   Event:
-    PCRIndex  - 1
+    PCRIndex  - 7
     EventType - 0x800000E4
     DigestCount: 0x00000001
     HashAlgo : 0x000C
@@ -49,7 +49,7 @@
       UnicodeNameLength  - 0x0000000000000005
       VariableDataLength - 0x000000000000052D
       UnicodeName        - devdb
-      
+
       EFI_SIGNATURE_DATA :
         SignatureOwner    - AA1A0732-8AFD-4632-962D-FF855626F501
   Event:
@@ -90,7 +90,7 @@
       SubHeaderType     - 0x00000000
 
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:
@@ -110,7 +110,7 @@
       DeviceType        - 0x00000001
       SubHeaderType     - 0x00000000
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:
@@ -121,7 +121,7 @@
   Event:
     PCRIndex  - 3
     EventType - 0x800000E2
-    
+
     EventData - Type: EV_EFI_SPDM_FIRMWARE_CONFIG
     TcgDeviceSecurityEvent2:
       Signature         - 'SPDM Device Sec2'
@@ -130,15 +130,15 @@
       AuthState         - 0x00000000
       DeviceType        - 0x00000001
       SubHeaderType     - 0x00000000
-      
+
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:
           Index                          - 0x03
           MeasurementSpec                - 0x01
-          
+
           Measurement:
             DMTFSpecMeasurementValueType - 0x02
   Event:
@@ -153,7 +153,7 @@
       DeviceType        - 0x00000001
       SubHeaderType     - 0x00000000
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:
@@ -173,7 +173,7 @@
       DeviceType        - 0x00000001
       SubHeaderType     - 0x00000000
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:
@@ -193,7 +193,7 @@
       DeviceType        - 0x00000001
       SubHeaderType     - 0x00000000
       SpdmMeasurementBlockSubHeader:
-        SpdmVersion                      - 0x0012
+        SpdmVersion                      - 0x0013
         SpdmMeasurementBlockCount        - 0x01
         SpdmMeasurementHashAlgo          - 0x00000002
         SpdmMeasurementBlock:

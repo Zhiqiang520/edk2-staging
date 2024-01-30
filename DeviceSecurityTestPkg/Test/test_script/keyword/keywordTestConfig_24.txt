@@ -1,5 +1,5 @@
   Event:
-    PCRIndex  - 1
+    PCRIndex  - 7
     EventType - 0x800000E3
     DigestCount: 0x00000001
     HashAlgo : 0x000C
@@ -37,7 +37,7 @@
         SpdmHashAlgo  - 0x00000001
         
   Event:
-    PCRIndex  - 1
+    PCRIndex  - 7
     EventType - 0x800000E4
     DigestCount: 0x00000001
     HashAlgo : 0x000C
