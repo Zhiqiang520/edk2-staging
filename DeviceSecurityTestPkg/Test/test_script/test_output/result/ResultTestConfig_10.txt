@@ -14,7 +14,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -34,7 +34,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -54,7 +54,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -74,7 +74,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -94,7 +94,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -114,7 +114,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:

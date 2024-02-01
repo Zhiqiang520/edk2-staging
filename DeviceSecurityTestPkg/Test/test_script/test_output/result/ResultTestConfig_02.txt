@@ -7,7 +7,7 @@ PCRIndex  - 0x01C40200 (NvIndex)
 EventType - 0x00000003
 DigestCount: 0x00000001
 HashAlgo : 0x000C
-Digest(0): 234D4A11422EBD1098722B883B88BDCAF0E1C64975F00D0CAE9E9943F5BBF226BB36F0A3ECBE0013DFDE8C517FC67D9D
+Digest(0): F566472BD337874F43DF3B53AD6264934E448D98F3AC268535D9903B32E109CC45FA8A107747E5CCD6D7232725022A4D
 EventData - Type: EV_NO_ACTION
 TcgNvIndexInstanceEvent:
 Signature       - 'NvIndexInstance '
@@ -24,7 +24,7 @@ SubHeaderUID      - 0x0000000000000000
 DevicePathLength  - 0x0000000000000016
 DevicePath        - PciRoot(0x0)/Pci(0x0,0x0)
 SpdmCertChainSubHeader:
-SpdmVersion   - 0x0012
+SpdmVersion   - 0x0013
 SpdmSlotId    - 0x00
 SpdmHashAlgo  - 0x00000001
 Event:
@@ -39,7 +39,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -59,7 +59,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -79,7 +79,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -99,7 +99,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -119,7 +119,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -139,7 +139,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:

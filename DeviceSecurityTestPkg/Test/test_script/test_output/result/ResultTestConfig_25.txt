@@ -3,7 +3,7 @@
 --------------------------ExpectKeywords list start------------------------
 
 Event:
-PCRIndex  - 1
+PCRIndex  - 7
 EventType - 0x800000E3
 DigestCount: 0x00000001
 HashAlgo : 0x000C
@@ -39,7 +39,7 @@ SpdmVersion   - 0x0010
 SpdmSlotId    - 0x00
 SpdmHashAlgo  - 0x00000001
 Event:
-PCRIndex  - 1
+PCRIndex  - 7
 EventType - 0x800000E4
 DigestCount: 0x00000001
 HashAlgo : 0x000C

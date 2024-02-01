@@ -3,7 +3,7 @@
 --------------------------ExpectKeywords list start------------------------
 
 Event:
-PCRIndex  - 1
+PCRIndex  - 7
 EventType - 0x800000E3
 DigestCount: 0x00000001
 HashAlgo : 0x000C
@@ -20,7 +20,7 @@ PCRIndex  - 0x01C40200 (NvIndex)
 EventType - 0x00000003
 DigestCount: 0x00000001
 HashAlgo : 0x000C
-Digest(0): DFF8FA33CD39897EED910311A7847AE274EDACAD57B83C1AD4500339DF5F71FE9AD1B76F648C09313417AA18A84D9710
+Digest(0): E3061E50C26AB404E68B94339FAEF8A6219DD12BE9E7578676E54E8E333342CC4D97CC027A38970CA8DF7D42E10A4934
 EventData - Type: EV_NO_ACTION
 TcgNvIndexInstanceEvent:
 Signature       - 'NvIndexInstance '
@@ -35,13 +35,13 @@ SubHeaderType     - 0x00000001
 SubHeaderLength   - 0x00000E6C
 SubHeaderUID      - 0x0000000000000000
 SpdmCertChainSubHeader:
-SpdmVersion   - 0x0012
+SpdmVersion   - 0x0013
 SpdmSlotId    - 0x00
 SpdmHashAlgo  - 0x00000002
 SpdmCertChain:
 Length      - 0x0E64
 Event:
-PCRIndex  - 1
+PCRIndex  - 7
 EventType - 0x800000E4
 DigestCount: 0x00000001
 HashAlgo : 0x000C
@@ -85,7 +85,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -105,7 +105,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -125,7 +125,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -145,7 +145,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -165,7 +165,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
@@ -185,7 +185,7 @@ AuthState         - 0x00000000
 DeviceType        - 0x00000001
 SubHeaderType     - 0x00000000
 SpdmMeasurementBlockSubHeader:
-SpdmVersion                      - 0x0012
+SpdmVersion                      - 0x0013
 SpdmMeasurementBlockCount        - 0x01
 SpdmMeasurementHashAlgo          - 0x00000002
 SpdmMeasurementBlock:
