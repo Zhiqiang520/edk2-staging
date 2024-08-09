@@ -24,7 +24,7 @@ WinHost_exe_path = r'Z:\Build\EmulatorX64\DEBUG_VS2019\X64'
 test_output = os.path.join(WinHost_exe_path,'test_output')
 startup_nsh = os.path.join(WinHost_exe_path,'startup.nsh')
 test_output_log = os.path.join(test_output, 'log')
-sources_code = r'Z:\SecurityPkg\DeviceSecurity'
+sources_code = r'Z:\SecurityPkg\DeviceSecurity\SpdmSecurityLib'
 
 if os.path.exists(test_output):
     shutil.rmtree(test_output, onerror=readonly_handler)
